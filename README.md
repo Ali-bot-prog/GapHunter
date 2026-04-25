@@ -19,21 +19,26 @@ This tool is built for entrepreneurs, digital agencies, and freelancers looking 
 ## 🛠️ Installation
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Ali-bot-prog/GapHunter.git
 cd GapHunter
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 3. Configuration
+
 Create a `.env` file in the root directory and add your Serper.dev API key:
+
 ```env
 MAPS_API_KEY=your_serper_api_key_here
 ```
+
 *You can get a free API key at [serper.dev](https://serper.dev).*
 
 ---
@@ -41,12 +46,15 @@ MAPS_API_KEY=your_serper_api_key_here
 ## 📖 Usage
 
 Run the automation with a single command:
+
 ```bash
 python main.py
 ```
 
 ### Customization
+
 You can change the target sector and location in `main.py`:
+
 ```python
 SECTOR = "restoran"
 LOCATION = "Ünye"
