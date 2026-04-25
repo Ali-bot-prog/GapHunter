@@ -1,59 +1,59 @@
 # 🎯 GapHunter
 
-**GapHunter** is a professional automation tool designed to identify businesses that lack a digital presence. By leveraging the Google Maps API (via Serper.dev), it discovers local businesses in specific sectors and locations, filters those without websites, and ranks them by their local influence (review count).
+**GapHunter**, dijital varlığı olmayan işletmeleri tespit etmek için tasarlanmış profesyonel bir otomasyon aracıdır. Google Maps API'sini (Serper.dev aracılığıyla) kullanarak, belirli sektörlerdeki ve konumlardaki yerel işletmeleri keşfeder, web sitesi olmayanları filtreler ve yerel etkilerine (yorum sayısı) göre sıralar.
 
-This tool is built for entrepreneurs, digital agencies, and freelancers looking to bridge the "digital gap" for local businesses.
-
----
-
-## 🚀 Features
-
-- **Automated Discovery**: Scrape hundreds of businesses in any sector and location.
-- **Smart Filtering**: Automatically identifies businesses that do NOT have a website listed.
-- **Lead Scoring**: Sorts potential leads by their review count to help you prioritize high-impact targets.
-- **Excel Compatible Export**: Saves results into structured CSV files formatted for Microsoft Excel.
-- **Technical Debt Free**: Modular architecture with logging, type hints, and robust error handling.
+Bu araç; girişimciler, dijital ajanslar ve yerel işletmeler için "dijital boşluğu" kapatmak isteyen serbest çalışanlar (freelancer) için geliştirilmiştir.
 
 ---
 
-## 🛠️ Installation
+## 🚀 Özellikler
 
-### 1. Clone the Repository
+- **Otomatik Keşif**: Herhangi bir sektör ve konumda yüzlerce işletmeyi tarayın.
+- **Akıllı Filtreleme**: Web sitesi listelenmemiş olan işletmeleri otomatik olarak tespit eder.
+- **Potansiyel Müşteri Skorlama**: Yüksek etkili hedeflere öncelik vermenize yardımcı olmak için potansiyel müşterileri yorum sayılarına göre sıralar.
+- **Excel Uyumlu Dışa Aktarma**: Sonuçları Microsoft Excel için yapılandırılmış CSV dosyalarına kaydeder.
+- **Teknik Borçsuz**: Loglama, tip ipuçları (type hints) ve sağlam hata yönetimi ile modüler mimari.
+
+---
+
+## 🛠️ Kurulum
+
+### 1. Repoyu Klonlayın
 
 ```bash
 git clone https://github.com/Ali-bot-prog/GapHunter.git
 cd GapHunter
 ```
 
-### 2. Install Dependencies
+### 2. Bağımlılıkları Yükleyin
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configuration
+### 3. Yapılandırma
 
-Create a `.env` file in the root directory and add your Serper.dev API key:
+Kök dizinde bir `.env` dosyası oluşturun ve Serper.dev API anahtarınızı ekleyin:
 
 ```env
 MAPS_API_KEY=your_serper_api_key_here
 ```
 
-*You can get a free API key at [serper.dev](https://serper.dev).*
+*Ücretsiz API anahtarınızı [serper.dev](https://serper.dev) adresinden alabilirsiniz.*
 
 ---
 
-## 📖 Usage
+## 📖 Kullanım
 
-Run the automation with a single command:
+Otomasyonu tek bir komutla çalıştırın:
 
 ```bash
 python main.py
 ```
 
-### Customization
+### Özelleştirme
 
-You can change the target sector and location in `main.py`:
+Hedef sektörü ve konumu `main.py` dosyasından değiştirebilirsiniz:
 
 ```python
 SECTOR = "restoran"
@@ -63,17 +63,17 @@ TARGET_COUNT = 50
 
 ---
 
-## 📂 Project Structure
+## 📂 Proje Yapısı
 
-- `main.py`: Entry point for the automation.
-- `scraper.py`: Core logic for interacting with the Serper/Google Maps API.
-- `processor.py`: Data filtering, sorting, and export logic.
-- `reports/`: (Auto-generated) Directory where CSV results are saved.
-- `.gitignore`: Ensures sensitive files like `.env` are not pushed to GitHub.
+- `main.py`: Otomasyonun giriş noktası.
+- `scraper.py`: Serper/Google Maps API ile etkileşim kuran çekirdek mantık.
+- `processor.py`: Veri filtreleme, sıralama ve dışa aktarma mantığı.
+- `reports/`: (Otomatik oluşturulur) CSV sonuçlarının kaydedildiği dizin.
+- `.gitignore`: `.env` gibi hassas dosyaların GitHub'a yüklenmemesini sağlar.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Katkıda Bulunma
 
 GapHunter geliştirilmeye açık bir projedir! Her türlü katkıya (Pull Request) ve yeni fikre açığız. Özellikle şu alanlarda yardıma ihtiyacımız var:
 
@@ -91,8 +91,8 @@ GapHunter geliştirilmeye açık bir projedir! Her türlü katkıya (Pull Reques
 
 ---
 
-## 🛡️ License & Copyright
+## 🛡️ Lisans ve Telif Hakkı
 
-This project is open-source. However, the implementation and logic are optimized for high-performance lead generation.
+Bu proje açık kaynaklıdır. Ancak, uygulama ve mantık yüksek performanslı potansiyel müşteri oluşturma için optimize edilmiştir.
 
-**© 2026 OmNexus. All Rights Reserved.**
+**© 2026 OmNexus. Tüm Hakları Saklıdır.**
